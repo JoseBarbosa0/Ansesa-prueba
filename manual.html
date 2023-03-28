@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Servicios de Salud 2014</title>
+  <title>Servicios de Salud Manual</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="" name="keywords">
   <meta content="" name="description">
@@ -34,6 +34,11 @@
     Author: BootstrapMade.com
     License: https://bootstrapmade.com/license/
   ======================================================= -->
+  <style>
+    #texto_oculto {
+      display: none;
+    }
+  </style>
 </head>
 
 <body>
@@ -121,7 +126,7 @@
            <!--- INDICE ---->
            <aside>
             <ol>
-              <li><a href="#introducion">Intoducción</a></li>
+              <li><a href="#introduccion">Intoducción</a></li>
               <li><a href="#inicio">Inicio</a></li>
               <li><a href="#principal">Opciones de la Pantalla principal</a><br>
               <li><a href="#vis">Visualizaciones</a></li>
@@ -138,9 +143,29 @@
             <br><br>El análisis se desarrolla por medio de visualizaciones con la versión académica de  <a href="https://www.tableau.com/">Tableu</a>, visualizaciones que facilitan la comprensión de la información, buscando revisar el comportamiento temporal y de frecuencia de las categorías en que se clasifican las enfermedades, su afectación a personas que carecen de un servicio de salud formal por estado y a nivel nacional, entre otros patrones.
           </p>
           
-          <h2 id="incio">Inicio</h2>
-          <p>Contenido de la sección 2</p>
-          
+          <h2 id="inicio">Inicio</h2>
+          <details>
+            <summary>ver mas</summary>
+            <p>Esta es la informacion de la pestaña inicio</p>
+          </details>
+
+
+
+          <h2 id="principal">Visualizaciones</h2>
+          <p>Haga clic en el botón para desplegar el texto:</p>
+          <button onclick="mostrarTexto()">Mostrar texto</button>
+          <p id="texto_oculto">Este es el texto que se mostrará u ocultará.</p>
+          <script>
+            function mostrarTexto() {
+              var texto = document.getElementById("texto_oculto");
+              if (texto.style.display === "none") {
+                texto.style.display = "block";
+              } else {
+                texto.style.display = "none";
+              }
+            }
+          </script>
+
           <h2 id="vis">Visualizaciones</h2>
           <p>Contenido de la sección</p>
 
