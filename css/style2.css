@@ -1,21 +1,35 @@
 
-
-.imagenTexto{
+/*Selector para crear imagenes con texto */
+.imagenTexto{ 
     position:relative;
     text-align: center;
-    color:rgb(255, 255, 255);
+    color:rgb(247, 250, 252);
 
 }
 
-.imagenTexto img{
-    width: 100%;
-
-    
-}
-.imagenTexto h3{
+/* Modifica el texto de la imagen */
+.imagenTexto h1{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 3em;
 }
+
+/* Modifica la imagen */
+.imagenTexto img{
+    width: 100%;
+    opacity: 0.7;
+    filter: brightness(50%);
+    
+}
+
+.separador{
+    height: 70px;
+    background-color: #002b09; /*color de fondo de la barra*/
+    color: #fff; /*color del texto dentro de la barra*/
+    padding: 10px; /*espacio alrededor del texto dentro de la barra*/
+    text-align: center;
+    
+}
+
